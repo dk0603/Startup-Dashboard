@@ -188,7 +188,7 @@ def load_startup_details(startupss):
         df9=df[df['startup'].str.contains(startupss)]['subvertical'].drop_duplicates(keep='first').dropna()
         st.dataframe(df9)
     with col3:
-        st.subheader('Cities Present in')
+        st.subheader('Cities started in')
         df10 = df[df['startup'].str.contains(startupss)]['city'].drop_duplicates(keep='first').dropna()
         st.dataframe(df10)
     st.subheader('Funding')
