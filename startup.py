@@ -68,7 +68,7 @@ def load_overall_Analysis():
     with col3:
         st.metric('Average Funding', str(avg_funding) + ' Cr')
     with col4:
-        st.metric('Total Funded df', str(funded) )
+        st.metric('Total Funded Startups', str(funded) )
     df['year'] = df['date'].dt.year
     df['month'] = df['date'].dt.month
     temp_df = df.groupby(['year', 'month'])['amount_in_cr'].sum().reset_index()
